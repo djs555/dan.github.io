@@ -8,21 +8,25 @@
 	#desc {
 
 		width: 50%;
-		border: solid 1px;
-	}
-
-	.message {
-
-		font-size: 3vw;
+		height: 100%;
+		font-size: 2.6vw;
 		font-family: avenir;
 		float: left;
-		align: center;
+		text-align: center;
 	}
 
 	#resume {
-
+		width: 100%;
+		align: center;
+	}
+	#container {
+		float: right;
+		height: 100%;
 		width: 50%;
-}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 </style>
 
@@ -32,15 +36,14 @@
 
 
 <body>
-
-<a href="Resume5web.pdf"><img src="Resume5-2.png" id="resume" align="right"></a>
-
 <div id="desc">
-<div class="message">
-	This is my resume
-
+	This is my resume.
+<br/>
+	Click on the image to get a better view
 </div>
-
+<div id="container">
+<a href="Resume5web.pdf"><img src="Resume5-2.png" id="resume" align="right"></a>
+</div>
 </body>
 
 
