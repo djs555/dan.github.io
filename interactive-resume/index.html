@@ -43,9 +43,15 @@
 		}
 
 	#left-content{
-		font-size: 1.5vw;
+		font-size: 1vw;
 		font-family: avenir;
+		padding-left: 5%;
+		padding-right: 5%;
 		}
+
+	#left-content h2 {
+		text-align: center;
+	}
 
 	#pic{
 		text-align: center;
@@ -119,6 +125,15 @@
 		margin-top: 5%;
 		}
 
+	.descIN{
+		margin-bottom: 14%;
+		}
+
+	.descIN p{
+		font-family: RockwellStd;
+		font-size: 0.8vw;
+		}
+
 	#res-footer-img{
 
 		}
@@ -148,13 +163,31 @@
 			</div> <!--close header-->
 
 	<div id="res-left">
-		<div id="involvment">
+		<div id="involvement">
 			<div class="sec-label">
 				<h1>INVOLVEMENT</h1>
 				</div><!--close sec-label-->
+			<div class="lines" id="involvement-line">
+				</div><!--close lines-->
+				<div class="descIN" id="beta">
+					<p>Beta Theta Pi Fraternity </br>Vice President</br>2016-present</p>
+					</div> <!--close desc-->
+				<div class="descIN" id="sba">
+					<p>USC Sports Business</br>Association Member</br>2017-present</p>
+					</div> <!--close desc-->
+				<div class="descIN" id="aim">
+					<p>USC Association for</br>Innovative Marketing</br>2015-present</p>
+					</div> <!--close desc-->
+			</div><!--involvement-->
+			<div class="spacer">
+				</div>
+		<div id="skills">
+			<div class="sec-label">
+				<h1>SKILLS</h1>
+				</div><!--close sec-label-->
 			<div class="lines">
 				</div><!--close lines-->
-			</div><!--close education-->
+			</div><!--close skills-->
 		</div> <!--close res-left-->
 
 	<div id="res-right">
@@ -227,7 +260,7 @@
 	//If you click on USC, this happens
 	var uscclick = document.getElementById("usc");
 		uscC = function(usc){
-			document.getElementById("left-content").innerHTML = "<h2>USC is dope. I am Dr. Dre.</h2>";
+			document.getElementById("left-content").innerHTML = "<h2>Part of the second class of the Iovine & Young Academy</h2><p>We're a new program at USC that focuses our studies on the intersection of design, technology, entrepreneurship and innovation. Relevant courses that I've taken in the program are listed below:</p></br><h3>Business</h3><ul type='circle'><li>Disruptive Innovation</li><li>Marketing for Creative Disruption and Innovation</li><li>Technologies for Interactive Marketing</li><li>Case Studies in Disruptive Innovation</li><li>Technology Entrepreneurship</li><li>Project and Operations Management</li><li>Sports Media and Business</li></ul>";
 		}
 		uscclick.addEventListener('click', uscC);
 
