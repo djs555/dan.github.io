@@ -43,7 +43,7 @@
 		}
 
 	#left-content{
-		font-size: 1vw;
+		font-size: 0.8vw;
 		font-family: avenir;
 		padding-left: 5%;
 		padding-right: 5%;
@@ -56,6 +56,15 @@
 	#pic{
 		text-align: center;
 		width: 40%;
+		}
+
+	#biz{
+		float: left;
+		width:50%;
+		}
+	#tech{
+		float: right;
+		width: 50%;
 		}
 /* End descriptions content */
 
@@ -260,7 +269,7 @@
 	//If you click on USC, this happens
 	var uscclick = document.getElementById("usc");
 		uscC = function(usc){
-			document.getElementById("left-content").innerHTML = "<h2>Part of the second class of the Iovine & Young Academy</h2><p>We're a new program at USC that focuses our studies on the intersection of design, technology, entrepreneurship and innovation. Relevant courses that I've taken in the program are listed below:</p></br><h3>Business</h3><ul type='circle'><li>Disruptive Innovation</li><li>Marketing for Creative Disruption and Innovation</li><li>Technologies for Interactive Marketing</li><li>Case Studies in Disruptive Innovation</li><li>Technology Entrepreneurship</li><li>Project and Operations Management</li><li>Sports Media and Business</li></ul></br><h3>Technology</h3><ul type='circle'><li>Front End Coding (HTML, CSS and Javascript)</li><li>Database and Back End Programming (PhP and SQL)</li><li>Innovators' Roundtable</li><li>Innovators' Forum</li></ul></br><h3>Design</h3><ul type='circle'><li>Design for User Experience</li><li>Rapid Visualization</li><li>3D Design Toolbox (Maya, 123D Make)</li><li>Digital Design Toolbox (Adobe Illustrator, Photoshop)</li><li>Motion Graphics Toolbox</li></ul>";
+			document.getElementById("left-content").innerHTML = "<h2>Part of the second class of the Iovine & Young Academy</h2><p>We're a new program at USC that focuses our studies on the intersection of design, technology, entrepreneurship and innovation. Relevant courses that I've taken in the program are listed below:</p></br>            <div id='biz'><h3>Business</h3><ul type='circle'><li>Disruptive Innovation</li><li>Marketing for Creative Disruption and Innovation</li><li>Technologies for Interactive Marketing</li><li>Case Studies in Disruptive Innovation</li><li>Project and Operations Management</li><li>Sports Media and Business</li><li>Interpersonal Competence and Development</li><li>Business and Professional Communication</li><li>Innovators' Roundtable</li><li>Innovators' Forum</li><li>Discerning and Making</li></ul></div>        <div id='tech'><h3>Technology</h3><ul type='circle'><li>Front End Coding (HTML, CSS and Javascript)</li><li>Database and Back End Programming (PhP and SQL)</li><li>Technology Entrepreneurship</li><li>Sports Media and Technology</li>       </ul>             <h3>Design</h3><ul type='circle'><li>Design for User Experience</li><li>Rapid Visualization</li><li>3D Design Toolbox (Maya, 123D Make)</li><li>Digital Design Toolbox (Adobe Illustrator, Photoshop)</li><li>Motion Graphics Toolbox (Java, Processing)</li><li>Rapid Visualization</li></ul></div>";
 		}
 		uscclick.addEventListener('click', uscC);
 
