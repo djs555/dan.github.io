@@ -51,12 +51,20 @@
 
 	#left-content h2 {
 		text-align: center;
-	}
-
-	#pic{
-		text-align: center;
-		width: 40%;
 		}
+
+	.descpic{
+		width: 40%;
+		padding-left: 30%;
+		padding-right: 30%;
+		}
+
+	#wasslink {
+		text-align: center;
+		}
+
+	#aimlogo{width:40%; margin-right:5%; padding-left:5%;}
+	#uploadlogo{width: 40%; margin-left:5%;padding-right:5%;}
 
 	#biz{
 		float: left;
@@ -184,7 +192,7 @@
 				<div class="descIN" id="sba">
 					<p>USC Sports Business</br>Association Member</br>2017-present</p>
 					</div> <!--close desc-->
-				<div class="descIN" id="aim">
+				<div class="descIN" id="aimIN">
 					<p>USC Association for</br>Innovative Marketing</br>2015-present</p>
 					</div> <!--close desc-->
 			</div><!--involvement-->
@@ -283,10 +291,16 @@
 	//If you click on Wasserman, this happens
 	var wassclick = document.getElementById("wasserman");
 		wassC = function(wasserman){
-			document.getElementById("left-content").innerHTML = "<br/><h2>Wasserman is an amazing place to work. Getting Emmanuel Mudiay a car is really hard.</h2><p>Click here for the <a href='http://teamwass.com'>Wasserman Website</a></p><img id='pic' src='https://upload.wikimedia.org/wikipedia/en/8/85/Wasserman_logo.jpg'>";
+			document.getElementById("left-content").innerHTML = "<h2>Working as an intern on Wasserman's Athlete Marketing team</h2><p>Wasserman is a sports agency based in Los Angeles that offers representation and marketing services to over 1600 world-wide professional athletes.</p>             <img id='wasspic' class='descpic' src='https://upload.wikimedia.org/wikipedia/en/8/85/Wasserman_logo.jpg'>         <p id='wasslink'>Click here for the <a href='http://teamwass.com'>Wasserman Website</a></p>";
 		}
-
 		wassclick.addEventListener('click', wassC);
+
+	//If you click on AIM, this happens
+	var aimclick = document.getElementById("aim");
+		aimC = function(aim){
+			document.getElementById("left-content").innerHTML = "<h2>Marketing Consultant for the USC Association of Innovative Marketing</h2><p>The Association for Innovative Marketing Consulting is a competitive undergraduate club at USC in which members work in teams to solve real-world problems for a variety of Los Angeles-based companies.</p></br></br></br><img id='aimlogo' float='left' src='http://static1.squarespace.com/static/55321cece4b06c86f2538089/t/57b508f3cd0f68597a8017c9/1471482104309/Logo_color.png'><img id='uploadlogo' float='right' src='http://upload.io/wp-content/uploads/2017/05/UploadVR-Full-Dark-1.png'>";
+		}
+		aimclick.addEventListener('click', aimC);
 
 	</script>
 
