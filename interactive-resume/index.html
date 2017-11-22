@@ -128,27 +128,31 @@
 
 	.desc:hover{
 		cursor: pointer;
+		border: 1px solid;
+		padding: 1%;
+		box-shadow: 2px 2px 2px 2px;
 		}
 
 	.desc h2 {
 		font-family: FranklinGothic-Demi;
 		font-size: 0.9vw;
-		margin-bottom: -8px;
 		}
 
-	.desc p {
+	.desc p, li {
 		font-family: RockwellStd;
 		font-size: 0.8vw;
-		margin-top: 5%;
+
 		}
 
-	.descIN{
-		margin-bottom: 14%;
-		}
+
 
 	.descIN p{
 		font-family: RockwellStd;
 		font-size: 0.8vw;
+		}
+
+	#interests-desc{
+		line-height: 96%;
 		}
 
 	#res-footer-img{
@@ -196,17 +200,55 @@
 					<p>USC Association for</br>Innovative Marketing</br>2015-present</p>
 					</div> <!--close desc-->
 			</div><!--involvement-->
-			<div class="spacer">
-				</div>
 		<div id="skills">
 			<div class="sec-label">
 				<h1>SKILLS</h1>
 				</div><!--close sec-label-->
 			<div class="lines">
 				</div><!--close lines-->
-			</div><!--close skills-->
-		</div> <!--close res-left-->
+				<div class="desc">
+					<h2>TECHNICAL</h2>
+						<p> - Adobe Photoshop</br>
+							- Adobe Illustrator</br>
+							- Adobe After Effects</br>
+							- Microsoft Excel</br>
+							- Presentation Softwares</br>
+							- HTML / CSS</br>
+							- SQL Database Coding</br>
+							- Google Analytics</br>
+						</p>
+				
+					<h2>INTERPERSONAL</h2>
+						<p>
+							- Presenting</br>
+							- Public Speaking</br>
+							- Collaboration</br>
+							- Leadership</br>
+							- Cold calling/E-mailing
 
+						</p>
+					</div><!--close desc-->
+				</div><!--close skills-->
+		<div id="interests">
+			<div class="sec-label">
+				<h1>INTERESTS</h1>
+				</div><!--close sec-label-->
+			<div class="lines">
+				</div><!--close lines-->
+				<div class="desc" id="interests-desc">
+					<p>
+						- Basketball</br>
+						- Football</br>
+						- World Travel</br>
+						- Cooking & Eating</br>
+						- Photography</br>
+						- Hip-Hop and R&B Music</br>
+						- Digital 2D Design</br>
+
+					</p>
+				</div><!--close desc-->
+			</div><!--close interests-->
+		</div> <!--close res-left-->
 	<div id="res-right">
 		<div id="education">
 			<div class="sec-label">
@@ -215,14 +257,13 @@
 			<div class="lines">
 				</div><!--close lines-->
 				<div class="desc" id="usc">
-					<h2>IOVINE & YOUNG ACADEMY • 2015-2019 • GPA - 3.54</h2>
-					<h2>UNIVERSITY OF SOUTHERN CALIFORNIA</h2>
+					<h2>IOVINE & YOUNG ACADEMY • 2015-2019 • GPA - 3.54
+					</br>UNIVERSITY OF SOUTHERN CALIFORNIA</h2>
 					<!--</br>-->
 					<p>A program founded by Dr. Dre and Jimmy Iovine in 2014. The curriculum is at the intersection of Design, Innovation and Entrepreneurship. Core coursework includes Disruption Innovation, Graphic Design and Coding. Emphasis in Marketing Techology and Sports Business Communications.</p>
 					</div><!--close desc-->
 				<div class="desc" id="beaver">
 					<h2>BEAVER COUNTRY DAY SCHOOL • 2012-2015 • GPA - 3.8</h2>
-					<h2>UNIVERSITY OF SOUTHERN CALIFORNIA</h2>
 					<!--</br>-->
 					<p>Attended an innovative high school in Chestnut Hill, MA, focusing on a progressive curriculum of collaboration and experiential learning.</p>
 					</div><!--close desc-->
@@ -284,7 +325,7 @@
 	//If you click on Beaver, this happens
 	var beaverclick = document.getElementById("beaver");
 		beaverC = function(beaver){
-			document.getElementById("left-content").innerHTML = "<h2>Beaver was really easy. </br>Nuvu-->very dope.</h2>";
+			document.getElementById("left-content").innerHTML = "<h2>Attended Beaver Country Day High School in Boston, MA.</h2><p>Beaver Country Day is a private high school just outside of Boston, MA. Beaver is known for its progressive education and innovative curricula. Students also have the option of attending the NuVu program in Cambridge, MA for a semester. NuVu is an innovation-based educational program run by MIT graduates. Students work in 2-week studio intervals and are tasked with solving problems using technology, design and creativity. </br></br> Below is a list of relevant coursework and projects from high school and NuVu:</p>";
 		}
 		beaverclick.addEventListener('click', beaverC);
 	
