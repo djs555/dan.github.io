@@ -4,28 +4,36 @@
 <link rel="icon" type="image/png" href="logo.ico/favicon-32x32.png" sizes="32x32">
 
 <style>
+	#back{
+		width: 10%;
+		background-color: tomato;
+		text-align: center;
+		font-family: avenir;
+	}
+
+	#back a{
+		text-decoration: none;
+		color: white;
+	}
 
 	#desc {
 
 		width: 50%;
-		height: 100%;
 		font-size: 2.6vw;
 		font-family: avenir;
 		float: left;
 		text-align: center;
+		padding-top: 30%;
 	}
 
 	#resume {
 		width: 100%;
-		align: center;
+		text-align: center;
 	}
 	#container {
 		float: right;
 		height: 100%;
 		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 	}
 
 </style>
@@ -36,9 +44,10 @@
 
 
 <body>
+		<div id="back">
+		<a href="..">Go back</a>
+		</div><!--close back-->
 <div id="desc">
-	This is my resume.
-<br/>
 	Click on the image to get a better view
 </div>
 <div id="container">
