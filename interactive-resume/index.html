@@ -26,10 +26,12 @@
 		}
 
 	#back{
-		width: 10%;
+		width: 12%;
 		background-color: tomato;
 		text-align: center;
 		font-family: avenir;
+		font-size: 1.5vw;
+		padding: 1%;
 	}
 
 	#back a{
@@ -53,9 +55,12 @@
 		text-align: center;
 		margin-bottom: -10px;
 		}
+	#welcome h1{
+		margin-top: 1%;
+	}
 
 	#left-content{
-		font-size: 0.8vw;
+		font-size: 1vw;
 		font-family: avenir;
 		padding-left: 5%;
 		padding-right: 5%;
@@ -86,6 +91,8 @@
 		float: right;
 		width: 50%;
 		}
+
+	#boupic{width:85%; padding-left: 7.5%; padding-right: 7.5%;}
 /* End descriptions content */
 
 
@@ -168,8 +175,11 @@
 		font-family: avenir;
 	}
 
-	#res-footer-img{
-
+	#footer{
+		width: 88%;
+		padding-left: 6%;
+		padding-right: 6%;
+		margin-top: 3%;
 		}
 /* End resume content */
 
@@ -196,9 +206,8 @@
 
 <div id="c-right" class="container">
 	<div id="res-header">
-		<img src="res-header.png" id="res-header-img">	
+		<img src="res-header.png" id="res-header-img">
 			</div> <!--close header-->
-
 	<div id="res-left">
 		<div id="involvement">
 			<div class="sec-label">
@@ -323,6 +332,11 @@
 					</div><!--close desc-->
 			</div><!--close personal-->
 		</div> <!--close res-right-->
+	<div id="footer">
+		<img id="footer" src="res-footer.png">
+		</div><!--close footer-->
+
+	</div> <!--close c-right-->
 
 <script>
 	//var mouseover = document.getElementByClassName("desc");
@@ -355,7 +369,7 @@
 	//If you click on AIM, this happens
 	var aimclick = document.getElementById("aim");
 		aimC = function(aim){
-			document.getElementById("left-content").innerHTML = "<h2>Marketing Consultant for the USC Association of Innovative Marketing</h2><p>The Association for Innovative Marketing Consulting is a competitive undergraduate club at USC in which members work in teams to solve real-world problems for a variety of Los Angeles-based companies.</p></br></br></br><img id='aimlogo' float='left' src='http://static1.squarespace.com/static/55321cece4b06c86f2538089/t/57b508f3cd0f68597a8017c9/1471482104309/Logo_color.png'><img id='uploadlogo' float='right' src='http://upload.io/wp-content/uploads/2017/05/UploadVR-Full-Dark-1.png'>";
+			document.getElementById("left-content").innerHTML = "<h2>Consultant for the USC Association of Innovative Marketing</h2><p>The Association for Innovative Marketing Consulting is a competitive undergraduate club at USC in which members work in teams to solve real-world problems for a variety of Los Angeles-based companies.</p></br></br></br><img id='aimlogo' float='left' src='http://static1.squarespace.com/static/55321cece4b06c86f2538089/t/57b508f3cd0f68597a8017c9/1471482104309/Logo_color.png'><img id='uploadlogo' float='right' src='http://upload.io/wp-content/uploads/2017/05/UploadVR-Full-Dark-1.png'>";
 		}
 		aimclick.addEventListener('click', aimC);
 
@@ -363,13 +377,11 @@
 	//If you click on Caribou, this happens
 	var caribouclick = document.getElementById("caribou");
 		caribouC = function(caribou){
-			document.getElementById("left-content").innerHTML = "<h2>Marketing Consultant for the USC Association of Innovative Marketing</h2><p>The Association for Innovative Marketing Consulting is a competitive undergraduate club at USC in which members work in teams to solve real-world problems for a variety of Los Angeles-based companies.</p></br></br></br><img id='aimlogo' float='left' src='https://drive.google.com/a/usc.edu/file/d/1GGYe-ztY9DFodttm6Ruf8_2AZm5-BefX/uc?usp=sharing'><img id='uploadlogo' float='right' src='http://upload.io/wp-content/uploads/2017/05/UploadVR-Full-Dark-1.png'>";
+			document.getElementById("left-content").innerHTML = "<h2>Unit Leader and Volleyball Director at Camp Caribou in Maine</h2><p>Camp Caribou is a all-boys overnight summer camp in Winslow, Maine. Campers range from ages 7-15 and come from across the United States and all over the world. Caribou was ranked the #1 in a list of the &ldquo;50 most amazing summer camps in America.&rdquo; </br></br><img id='boupic' src='http://mainecamps.org/files/2010/02/CaribouWeb.jpg'> <br/><br/> I went to the camp for six years as a camper before becoming a 'counselor-in-training' in the volleyball department in 2013. After that summer I became a full bunk counselor and coached volleyball in 2014. From 2015 to 2016 I headed our volleyball program, managing a team of four other coaches. In this role I designed lesson plans, drills and games in order to teach kids the sport of volleyball, but also to get them to enjoy it. When I started, volleyball was an extremely minor sport at the camp and suffered scarce attendance. Following my time as director, volleyball has become arguably the most popular sport on camp over the last three years. </br></br>In 2017, I was promoted to serve as part of the camp's administrative team in the Unit Leader role. I was responsible for overseeing a unit of about 90 campers, managing social dynamics and ensuring the safety and happiness of the group. As Unit Leader, I was also tasked with helping the camp's staff do their jobs as effectively and enjoyably as possible.</p></br></br></br>";
 		}
 		caribouclick.addEventListener('click', caribouC);
 
 	</script>
-
-</div> <!--close c-right-->
 	
 
 
